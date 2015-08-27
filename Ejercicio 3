@@ -1,0 +1,40 @@
+import java.io.*; 
+import java.util.Scanner; 
+
+public class Numeros { 
+    public static void main (String arg[]) { 
+        int n1, n2, n3; 
+        Scanner entrada = new Scanner(System.in); 
+
+        System.out.println("Ingresa 1er numero:"); 
+        n1 = entrada.nextInt(); 
+        System.out.println("Ingresa 1er numero:"); 
+        n2 = entrada.nextInt(); 
+        System.out.println("Ingresa 1er numero:"); 
+        n3 = entrada.nextInt(); 
+
+        if ((n1 > n2) & (n1 > n3)) { 
+            if (n2 > n3) { 
+                System.out.println (n1+" "+n2+" "+n3); 
+            } else { 
+                System.out.println (n1+" "+n3+" "+n2); 
+            } 
+        } 
+
+        if ((n2 > n1) & (n2 > n3)) { 
+            if (n1 > n3) { 
+                System.out.println (n2+" "+n1+" "+n3); 
+            } else { 
+                System.out.println (n2+" "+n3+" "+n1); 
+            } 
+        } 
+
+        if ((n3 > n1) & (n3 > n1)) { 
+            if (n1 > n2) { 
+                System.out.println (n3+" "+n1+" "+n2); 
+            } else { 
+                System.out.println (n3+" "+n2+" "+n1); 
+            } 
+        } 
+    } 
+} 
