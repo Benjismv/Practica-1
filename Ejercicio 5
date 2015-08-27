@@ -3,11 +3,9 @@ package Ejercicios;
 
 public class ej5 {
 public static void main(String[] args)throws IOException {
-
 BufferedReader en=new BufferedReader (new InputStreamReader (System.in));
-
-int num,cont,invnum,i,pot,gnum;
-int sumainv;
+    int num,cont,invnum,i,pot,gnum;
+    int sumainv;
 System.out.print("introduzca un numero=");
   num=Integer.parseInt(en.readLine());
   cont=0;
