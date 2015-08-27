@@ -1,0 +1,35 @@
+package Ejercicios;
+
+public class ej10 {
+	public class Main {
+		 public static void main(String[] args) {
+			 int edad,media_edad,suma_edad,mayor_edad,mayor_175,N;
+			 double altura,media_altura,suma_alt;
+			 	mayor_edad=0;
+			 		media_altura=0;
+			 		mayor_175=0;
+			 		suma_edad=0;
+			 		suma_alt=0;
+			 		System.out.print("Introduzca numero de alumnos ");
+	 				N=Entrada.entero();
+			 			for (int i=1;i<N;i++){
+			 				System.out.println("Alumno " +i);
+			 				System.out.print("Introduzca edad: ");
+			 				edad=Entrada.entero();
+			 				System.out.print("Introduzca altura: ");
+			 				altura=Entrada.real();
+			 				if(edad>18)
+			 					mayor_edad++;
+			 				if(altura>1.75)
+			 					mayor_175++;
+			 				suma_edad=suma_edad+edad;
+			 				suma_alt=suma_alt+altura;
+			 			}
+		 media_edad=suma_edad/N;
+		 media_altura=suma_alt/N;
+		 System.out.println("\n\nLa edad media es de: " +media_edad);
+		 System.out.println("La altura media es de: " +media_altura);
+		 System.out.println("Mayor de 18 años: " +mayor_edad);
+		 System.out.println("Mayor de 1.75: " +mayor_175);
+		 }
+		}
