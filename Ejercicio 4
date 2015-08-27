@@ -1,7 +1,8 @@
+package Ejercicios;
 import java.util.*;
 import java.io.*;
 
-public class Main {
+public class ej4 {
     public static void main(String[] args) throws IOException{
         Scanner ob = new Scanner(System.in);
         int n, cifras;        
