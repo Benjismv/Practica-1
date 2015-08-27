@@ -1,7 +1,8 @@
+package Ejercicios;
 import java.io.*; 
 import java.util.Scanner; 
 
-public class Numeros { 
+public class ej3 {
     public static void main (String arg[]) { 
         int n1, n2, n3; 
         Scanner entrada = new Scanner(System.in); 
